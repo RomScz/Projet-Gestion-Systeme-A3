@@ -1,0 +1,15 @@
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\bin\Debug\net6.0\ConsoleAppProjet.exe
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\bin\Debug\net6.0\ConsoleAppProjet.deps.json
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\bin\Debug\net6.0\ConsoleAppProjet.runtimeconfig.json
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\bin\Debug\net6.0\ConsoleAppProjet.dll
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\bin\Debug\net6.0\ConsoleAppProjet.pdb
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.csproj.AssemblyReference.cache
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.AssemblyInfoInputs.cache
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.AssemblyInfo.cs
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.csproj.CoreCompileInputs.cache
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.dll
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\refint\ConsoleAppProjet.dll
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.pdb
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.genruntimeconfig.cache
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ref\ConsoleAppProjet.dll
