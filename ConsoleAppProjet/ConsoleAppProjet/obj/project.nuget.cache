@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "U0ssiJvQNdpwOe0Fs+FSOwGYNl0XutR73BoVKqj2PW5HJLy7e6I8htIxwC4It5WIzkWyR8Z2xMgQpSLRNc9zYg==",
+  "dgSpecHash": "cMOPxRIKqRl4aXHAeLNRCZYC18IUmGnfqTgWXa57RTXyiLlFRi/r/XnGZOkQZFul9pmkHzrl3p//Jl6G2ZXWnw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sconza\\source\\repos\\Projet-Gestion-Systeme-A3\\ConsoleAppProjet\\ConsoleAppProjet\\ConsoleAppProjet.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Sconza\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

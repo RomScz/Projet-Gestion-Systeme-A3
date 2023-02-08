@@ -13,3 +13,5 @@ C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleA
 C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.pdb
 C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.genruntimeconfig.cache
 C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ref\ConsoleAppProjet.dll
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\ConsoleAppProjet\ConsoleAppProjet\obj\Debug\net6.0\ConsoleAppProjet.csproj.CopyComplete
