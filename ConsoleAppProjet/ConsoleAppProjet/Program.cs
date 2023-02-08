@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿using System;
+=======
+using System;
+>>>>>>> 5dd127f0f8ece8cc6873a8327f7a360b0a997ef9
 using Newtonsoft.Json;
 
 
