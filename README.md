@@ -1,4 +1,8 @@
+#titre EasySave
+
 This project is called **EasySave**, you will find all the different version in this repository. 
+
+--------------------------------------------------------------------------------------
 
 Livrable 0 Description: Work Environment
 Your team must install a work environment that respects the constraints imposed by ProSoft.
@@ -13,7 +17,7 @@ A particular vigilance will be carried on :
 
 - Code quality (absence of redundancy in the lines of code)
 
- 
+ --------------------------------------------------------------------------------------
 
 Description of livrable 1 : EasySave version 1.0
 The specifications of the first version of the software are as follows:
