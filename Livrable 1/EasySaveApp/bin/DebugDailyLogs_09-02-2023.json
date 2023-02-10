@@ -1,0 +1,16 @@
+{
+  "SourceDir": "C:\\Users\\Sconza\\Downloads\\test",
+  "TargetDir": "C:\\Users\\Sconza\\Downloads\\backup",
+  "SaveName": "test",
+  "BackupDate": "09/02/2023 09:15:26",
+  "TransactionTime": "00:00:00.05",
+  "TotalSize": 118349
+}
+{
+  "SourceDir": "C:\\Users\\Sconza\\Downloads\\test",
+  "TargetDir": "C:\\Users\\Sconza\\Downloads\\backup",
+  "SaveName": "cesi",
+  "BackupDate": "09/02/2023 09:17:08",
+  "TransactionTime": "00:00:00.06",
+  "TotalSize": 118349
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "SourceDir": "C:\\Users\\Sconza\\Downloads\\test",
+    "TargetDir": "C:\\Users\\Sconza\\Downloads\\backup",
+    "SaveName": "test",
+    "Type": 2,
+    "MirrorDir": "C:\\Users\\Sconza\\Downloads\\backup"
+  },
+  {
+    "SourceDir": "C:\\Users\\Sconza\\Downloads\\test",
+    "TargetDir": "C:\\Users\\Sconza\\Downloads\\backup",
+    "SaveName": "test",
+    "Type": 1,
+    "MirrorDir": ""
+  },
+  {
+    "SourceDir": "C:\\Users\\Sconza\\Downloads\\test",
+    "TargetDir": "C:\\Users\\Sconza\\Downloads\\backup",
+    "SaveName": "cesi",
+    "Type": 1,
+    "MirrorDir": ""
+  }
+]

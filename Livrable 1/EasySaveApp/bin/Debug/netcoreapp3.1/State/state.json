@@ -1,0 +1,38 @@
+[
+  {
+    "SaveName": "test",
+    "BackupDate": "09/02/2023 09:15:26",
+    "SaveState": false,
+    "SourceFile": null,
+    "TargetFile": null,
+    "TotalFile": 0.0,
+    "TotalSize": 0,
+    "Progress": 0.0,
+    "FileRest": 0,
+    "TotalSizeRest": 0
+  },
+  {
+    "SaveName": "test",
+    "BackupDate": "09/02/2023 09:15:26",
+    "SaveState": false,
+    "SourceFile": null,
+    "TargetFile": null,
+    "TotalFile": 0.0,
+    "TotalSize": 0,
+    "Progress": 0.0,
+    "FileRest": 0,
+    "TotalSizeRest": 0
+  },
+  {
+    "SaveName": "cesi",
+    "BackupDate": "09/02/2023 09:17:08",
+    "SaveState": false,
+    "SourceFile": null,
+    "TargetFile": null,
+    "TotalFile": 0.0,
+    "TotalSize": 0,
+    "Progress": 0.0,
+    "FileRest": 0,
+    "TotalSizeRest": 0
+  }
+]
