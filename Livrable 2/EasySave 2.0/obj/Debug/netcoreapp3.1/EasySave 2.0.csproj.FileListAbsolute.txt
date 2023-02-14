@@ -1,0 +1,5 @@
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Livrable 2\EasySave 2.0\EasySave 2.0\obj\Debug\netcoreapp3.1\EasySave 2.0.csproj.AssemblyReference.cache
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Livrable 2\EasySave 2.0\EasySave 2.0\obj\Debug\netcoreapp3.1\view\MainWindow.g.cs
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Livrable 2\EasySave 2.0\EasySave 2.0\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Livrable 2\EasySave 2.0\EasySave 2.0\obj\Debug\netcoreapp3.1\EasySave 2.0_MarkupCompile.cache
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Livrable 2\EasySave 2.0\EasySave 2.0\obj\Debug\netcoreapp3.1\EasySave 2.0_MarkupCompile.lref
