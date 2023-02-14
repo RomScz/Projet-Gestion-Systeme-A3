@@ -9,12 +9,13 @@ namespace EasySaveApp.model
 {
     class Model
     {
- //---------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //---------------------------------------------------------------------------------------------------------------------------------------------------------------
         //Declaration of all variables and properties
         public int checkdatabackup;
         private string serializeObj;
         public string backupListFile = System.Environment.CurrentDirectory + @"\Works\";
         public string stateFile = System.Environment.CurrentDirectory + @"\State\";
+        public string LogDir = @"..\..\..\Logs\";
         public DataState DataState { get; set; }
         public string NameStateFile { get; set; }
         public string BackupNameState { get; set; }
@@ -33,10 +34,10 @@ namespace EasySaveApp.model
         public string userMenuInput { get; set; }
         public string MirrorDir { get; set; }
 
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //---------------------------------------------------------------------------------------------------------------------------------------------------------------
         public Model()
         {
-            userMenuInput =  " ";
+            userMenuInput = " ";
 
             if (!Directory.Exists(backupListFile)) //Check if the folder is created
             {
@@ -50,6 +51,11 @@ namespace EasySaveApp.model
             }
             stateFile += @"state.json"; //Create a JSON file
 
+            if (!Directory.Exists(LogDir)) //Check if the folder is created
+            {
+                DirectoryInfo di = Directory.CreateDirectory(LogDir); //Function that creates the folder
+            }
+
 
         }
 
@@ -58,7 +64,8 @@ namespace EasySaveApp.model
             DataState = new DataState(NameStateFile);
             this.DataState.SaveState = true;
             Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start(); //Starting the time for the log file
+            Stopwatch cryptwatch = new Stopwatch();
+            stopwatch.Start(); //Starting the timed for the log file
 
             DirectoryInfo dir = new DirectoryInfo(inputpathsave);  // Get the subdirectories for the specified directory.
 
@@ -85,10 +92,10 @@ namespace EasySaveApp.model
                     TotalSize += file.Length;
                     nbfilesmax++;
                 }
-                foreach(DirectoryInfo subdir in dirs) // Loop to allow calculation of subfiles and subfolder size
+                foreach (DirectoryInfo subdir in dirs) // Loop to allow calculation of subfiles and subfolder size
                 {
                     FileInfo[] Maxfiles = subdir.GetFiles();
-                    foreach(FileInfo file in Maxfiles)
+                    foreach (FileInfo file in Maxfiles)
                     {
                         TotalSize += file.Length;
                         nbfilesmax++;
@@ -98,11 +105,11 @@ namespace EasySaveApp.model
             }
 
             //Loop that allows to copy the files to make the backup
-            foreach (FileInfo file in files) 
+            foreach (FileInfo file in files)
             {
                 string tempPath = Path.Combine(inputDestToSave, file.Name);
 
-                if(size > 0)
+                if (size > 0)
                 {
                     progs = ((float)size / TotalSize) * 100;
                 }
@@ -118,20 +125,23 @@ namespace EasySaveApp.model
 
                 UpdateStatefile(); //Call of the function to start the state file system
 
-                file.CopyTo(tempPath, true); //Function that allows you to copy the file to its new folder.
+                
+                    file.CopyTo(tempPath, true); //Function that allows you to copy the file to its new folder.
+               
+
                 nbfiles++;
                 size += file.Length;
 
             }
 
-            // If copying subdirectories, copy contents to new location.
-            if (copyDir)  
+            // If copying subdirectories, copy them and their contents to new location.
+            if (copyDir)
             {
                 foreach (DirectoryInfo subdir in dirs)
                 {
                     string tempPath = Path.Combine(inputDestToSave, subdir.Name);
                     CompleteSave(subdir.FullName, tempPath, copyDir, true);
-                }   
+                }
             }
             //System which allows the values ​​to be reset to 0 at the end of the backup
             DataState.TotalSize = TotalSize;
@@ -147,6 +157,7 @@ namespace EasySaveApp.model
             UpdateStatefile(); //Call of the function to start the state file system
 
             stopwatch.Stop(); //Stop the stopwatch
+            cryptwatch.Stop();
             this.TimeTransfert = stopwatch.Elapsed; // Transfer of the chrono time to the variable
         }
 
@@ -196,7 +207,9 @@ namespace EasySaveApp.model
                 DataState.Progress = progs;
 
                 UpdateStatefile();//Call of the function to start the state file system
-                v.CopyTo(tempPath, true); //Function that allows you to copy the file to its new folder.
+
+                    v.CopyTo(tempPath, true); //Function that allows you to copy the file to its new folder.
+              
                 size += v.Length;
                 nbfiles++;
             }
@@ -233,7 +246,7 @@ namespace EasySaveApp.model
 
                 foreach (var obj in list) // Loop to allow filling of the JSON file
                 {
-                    if(obj.SaveName == this.NameStateFile) //Verification so that the name in the json is the same as that of the backup
+                    if (obj.SaveName == this.NameStateFile) //Verification so that the name in the json is the same as that of the backup
                     {
                         obj.SourceFile = this.DataState.SourceFile;
                         obj.TargetFile = this.DataState.TargetFile;
@@ -260,32 +273,49 @@ namespace EasySaveApp.model
 
         public void UpdateLogFile(string savename, string sourcedir, string targetdir)//Function to allow modification of the log file
         {
-            Stopwatch stopwatch = new Stopwatch();
-            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", TimeTransfert.Hours, TimeTransfert.Minutes, TimeTransfert.Seconds, TimeTransfert.Milliseconds / 10); //Formatting the stopwatch for better visibility in the file
+            Stopwatch stopwatch = new Stopwatch(); //Declaration of the stopwatch
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", TimeTransfert.Hours, TimeTransfert.Minutes, TimeTransfert.Seconds, TimeTransfert.Milliseconds / 10);
             
-            DataLogs datalogs = new DataLogs //Apply the retrieved values ​​to their classes
+            DataLogs dataLogs = new DataLogs //Variable moves retrieved from the variables for placement in the JSON file.
             {
                 SaveName = savename,
                 SourceDir = sourcedir,
                 TargetDir = targetdir,
                 BackupDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
                 TotalSize = TotalSize,
-                TransactionTime = elapsedTime
+                TransactionTime = elapsedTime,
             };
 
-            string path = System.Environment.CurrentDirectory; //Allows you to retrieve the path of the program environment
-            var directory = System.IO.Path.GetDirectoryName(path); // This file saves in the project: \EasySaveApp\bin
+            List<DataLogs> dataLogList = new List<DataLogs>();
+            this.serializeObj = null;
+            var directory = System.IO.Path.GetDirectoryName(LogDir + @"/Logs/");
+            var path = directory + @"DailyLogs_" + DateTime.Now.ToString("dd-MM-yyyy") + ".json";
 
-            string serializeObj = JsonConvert.SerializeObject(datalogs, Formatting.Indented) + Environment.NewLine; //Serialization for writing to json file
-            File.AppendAllText(directory + @"DailyLogs_" + DateTime.Now.ToString("dd-MM-yyyy") + ".json", serializeObj); //Function to write to log file
+            if (!File.Exists(path))
+            {
+                File.WriteAllText(path, this.serializeObj);
+            }
+            string jsonString = File.ReadAllText(path);
+
+            if (jsonString.Length != 0)
+            {
+                DataLogs[] list = JsonConvert.DeserializeObject<DataLogs[]>(jsonString);
+                foreach (var obj in list) // Loop to allow filling of the JSON file
+                {
+                    dataLogList.Add(obj); 
+                }
+            }
+            dataLogList.Add(dataLogs); //Allows you to prepare the objects for the json filling
+            this.serializeObj = JsonConvert.SerializeObject(dataLogList.ToArray(), Formatting.Indented) + Environment.NewLine; //Serialization for writing to json file
+            File.WriteAllText(path, this.serializeObj); //Function to write to JSON file
 
             stopwatch.Reset(); // Reset of stopwatch
         }
-       
+
         public void AddSave(Backup backup) //Function that creates a backup job
         {
             List<Backup> backupList = new List<Backup>();
-            this.serializeObj = null; 
+            this.serializeObj = null;
 
             if (!File.Exists(backupListFile)) //Checking if the file exists
             {
@@ -297,7 +327,7 @@ namespace EasySaveApp.model
             if (jsonString.Length != 0) //Checking the contents of the json file is empty or not
             {
                 Backup[] list = JsonConvert.DeserializeObject<Backup[]>(jsonString); //Derialization of the json file
-                foreach ( var obj in list) //Loop to add the information in the json
+                foreach (var obj in list) //Loop to add the information in the json
                 {
                     backupList.Add(obj);
                 }
@@ -356,21 +386,21 @@ namespace EasySaveApp.model
                 Backup[] list = JsonConvert.DeserializeObject<Backup[]>(jsonString);  //Derialization of the json file
                 foreach (var obj in list)
                 {
-                    if(obj.SaveName == backupname) //Check to have the correct name of the backup
+                    if (obj.SaveName == backupname) //Check to have the correct name of the backup
                     {
                         backup = new Backup(obj.SaveName, obj.SourceDir, obj.TargetDir, obj.Type, obj.MirrorDir); //Function that allows you to retrieve information about the backup
                     }
                 }
             }
 
-            if(backup.Type == 1) //Full backup
+            if (backup.Type == 1) //If the type is 1, it means it's a full backup
             {
                 NameStateFile = backup.SaveName;
                 CompleteSave(backup.SourceDir, backup.TargetDir, true, false); //Calling the function to run the full backup
                 UpdateLogFile(backup.SaveName, backup.SourceDir, backup.TargetDir); //Call of the function to start the modifications of the log file
                 Console.WriteLine("Saved Successfull !"); //Satisfaction message display
             }
-            else //Differential backup
+            else //If this is the wrong guy then, it means it's a differential backup
             {
                 NameStateFile = backup.SaveName;
                 DifferentialSave(backup.SourceDir, backup.MirrorDir, backup.TargetDir); //Calling the function to start the differential backup
@@ -389,12 +419,53 @@ namespace EasySaveApp.model
                 string jsonString = File.ReadAllText(backupListFile);//Reading the json file
                 if (jsonString.Length != 0)//Checking the contents of the json file is empty or not
                 {
-                    Backup[] list = JsonConvert.DeserializeObject<Backup[]>(jsonString); //Deserialization of the json file
+                    Backup[] list = JsonConvert.DeserializeObject<Backup[]>(jsonString); //Derialization of the json file
                     checkdatabackup = list.Length; //Allows to count the number of backups
                 }
             }
         }
 
-    }
+        
+        
+        public List<Backup> NameList()//Function that lets you know the names of the backups.
+        {
+            List<Backup> backupList = new List<Backup>();
 
+            if (!File.Exists(backupListFile)) //Checking if the file exists
+            {
+                File.WriteAllText(backupListFile, this.serializeObj);
+            }
+
+            List<Backup> names = new List<Backup>();
+            string jsonString = File.ReadAllText(backupListFile); //Function to read json file
+            Backup[] list = JsonConvert.DeserializeObject<Backup[]>(jsonString); // Function to dezerialize the json file
+
+            if(jsonString.Length != 0)
+            {
+                foreach (var obj in list) //Loop to display the names of the backups
+                {
+                    names.Add(obj);
+                }
+
+            }
+
+            return names;
+
+        }
+
+
+        public static bool checkSoftware(string [] blacklist_app)//Function that allows you to compare a program that is in the list is running.
+        {
+            foreach(string process in blacklist_app)
+            {
+                if(Process.GetProcessesByName(process).Length > 0)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+    }
 }
