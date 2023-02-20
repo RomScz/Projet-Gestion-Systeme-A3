@@ -1,0 +1,37 @@
+[
+  {
+    "SourceDir": "C:\\Users\\hp\\Downloads\\test",
+    "TargetDir": "C:\\Users\\hp\\Downloads\\backup",
+    "SaveName": "test",
+    "Type": 1,
+    "MirrorDir": ""
+  },
+  {
+    "SourceDir": "C:\\Users\\hp\\Downloads\\test",
+    "TargetDir": "C:\\Users\\hp\\Downloads\\backup",
+    "SaveName": "test",
+    "Type": 1,
+    "MirrorDir": ""
+  },
+  {
+    "SourceDir": "C:\\Users\\hp\\Downloads\\test",
+    "TargetDir": "C:\\Users\\hp\\Downloads\\backup",
+    "SaveName": "test",
+    "Type": 1,
+    "MirrorDir": ""
+  },
+  {
+    "SourceDir": "C:\\Users\\hp\\Downloads\\test",
+    "TargetDir": "C:\\Users\\hp\\Downloads\\backup",
+    "SaveName": "youri",
+    "Type": 1,
+    "MirrorDir": ""
+  },
+  {
+    "SourceDir": "C:\\Users\\hp\\Downloads\\test",
+    "TargetDir": "C:\\Users\\hp\\Downloads\\backup",
+    "SaveName": "dfred",
+    "Type": 1,
+    "MirrorDir": ""
+  }
+]
