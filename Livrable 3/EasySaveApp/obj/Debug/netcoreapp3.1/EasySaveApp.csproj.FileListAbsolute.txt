@@ -26,3 +26,10 @@ C:\Users\Sconza\Downloads\EasySave-main\EasySave-main\Version3.0\EasySaveApp\Eas
 C:\Users\Sconza\Downloads\EasySave-main\EasySave-main\Version3.0\EasySaveApp\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.dll
 C:\Users\Sconza\Downloads\EasySave-main\EasySave-main\Version3.0\EasySaveApp\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.pdb
 C:\Users\Sconza\Downloads\EasySave-main\EasySave-main\Version3.0\EasySaveApp\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.genruntimeconfig.cache
+C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.csproj.AssemblyReference.cache
+C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\view\MainWindow.g.cs
+C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp_MarkupCompile.cache
+C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp_MarkupCompile.lref
+C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.dll
+C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.pdb
