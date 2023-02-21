@@ -19,11 +19,11 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.Row="1" Margin="0,0,10,235">
+        <Grid Grid.Row="1">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFFF" Offset="1"/>
-                    <GradientStop Color="#FF00" Offset="0"/>
+                    <GradientStop Color="#FF044F6F" Offset="1"/>
+                    <GradientStop Color="#FF0BABF1" Offset="0"/>
                 </LinearGradientBrush>
             </Grid.Background>
             <Grid.RowDefinitions>
@@ -34,25 +34,46 @@
                 <DropShadowEffect BlurRadius="20" Color="#FF77D1F7" RenderingBias="Quality" ShadowDepth="1"/>
             </Grid.Effect>
 
-            <Grid Background="#FF01" Margin="0,97,-762,-62" Grid.Row="1">
+            <Grid Background="#FF004265">
                 <TextBlock Text="EASYSAVE" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian" FontWeight="Normal" Foreground="White" FontSize="38"/>
             </Grid>
 
             <StackPanel Grid.Row="1">
-
-                <Button x:Name="button_fr" Margin="10" Click="Button_Click_fr" Background="#FF00" Height="48" BorderBrush="{x:Null}">
+                <Button Margin="10" Click="Open_cryptextension" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
                     <Grid Width="150" Height="30">
-                        <materialDesigin:PackIcon Kind="translate" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
+                        <materialDesigin:PackIcon Kind="Build" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
+                        <TextBlock x:Name="textcrypt" Text="PARAMETER OF CRYPTAGE" Margin="16,0,0,0" FontFamily="Sitka Text" TextAlignment="Justify"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="154" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+                <Button Margin="10" Click="Open_blacklist" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
+                    <Grid Width="150" Height="30">
+                        <materialDesigin:PackIcon Kind="Block" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
+                        <TextBlock x:Name="textbacklist" Text="BLACKLIST SOFTWARE" Margin="16,0,0,0" FontFamily="Sitka Text" TextAlignment="Justify"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="154" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+                <Button Margin="10" Click="Open_extensionprio" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
+                    <Grid Width="150" Height="30">
+                        <materialDesigin:PackIcon Kind="Assignment" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
+                        <TextBlock x:Name="textextensionprio" Text="PRIORITY EXTENSION" Margin="16,0,0,0" FontFamily="Sitka Text" TextAlignment="Justify"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="154" FontSize="10" Foreground="White"/>
+                    </Grid>
+                </Button>
+
+                <Button x:Name="button_fr" Margin="10" Click="Button_Click_fr" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
+                    <Grid Width="150" Height="30">
+                        <materialDesigin:PackIcon Kind="Translate" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
                         <TextBlock x:Name="francaistext"  Text="FRENCH" Margin="16,0,0,0" FontFamily="Sitka Text" TextAlignment="Center"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="154" FontSize="10" Foreground="White"/>
                     </Grid>
                 </Button>
 
                 <Button x:Name="button_en" Margin="10" Click="Button_Click_en" Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
                     <Grid Width="150" Height="30">
-                        <materialDesigin:PackIcon Kind="language" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
+                        <materialDesigin:PackIcon Kind="Translate" VerticalAlignment="Center" Margin="-4,0,0,0" Foreground="White"/>
                         <TextBlock x:Name="englishtext"  Text="ENGLISH" Margin="16,0,0,0" FontFamily="Sitka Text" TextAlignment="Center"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="154" FontSize="10" Foreground="White"/>
                     </Grid>
                 </Button>
+
             </StackPanel>
         </Grid>
 
@@ -62,7 +83,7 @@
                 <RowDefinition Height="124*"/>
             </Grid.RowDefinitions>
 
-            <Rectangle Margin="18,26,22,26" Fill="#FF00" RadiusX="11" RadiusY="11"/>
+            <Rectangle Margin="20,26,20,26" Fill="#FFD0D1D0" RadiusX="11" RadiusY="11"/>
             <Grid>
                 <Button x:Name="buton_addsave" Click="buton_addsave_Click" Margin="510,138,40,36"  Background="#FF0056A7" Height="48" BorderBrush="{x:Null}">
                     <Grid Width="150" Height="30">
@@ -100,24 +121,62 @@
                 </Grid>
             </Grid>
 
-            <Rectangle Grid.Row="1"  Margin="-182,56,212,2" Fill="#FF00" RadiusX="11" RadiusY="11"/>
-            <ListBox x:Name="Save_work" SelectionMode="Multiple" Grid.Row="1" Margin="-166,75,549,20"/>
+            <Rectangle Grid.Row="1"  Margin="15" Fill="#FFD0D1D0" RadiusX="11" RadiusY="11"/>
 
-            <Button x:Name="button_startsave" Click="button_startsave_Click" Margin="275,180,275,20"  Background="#FF0056A7" Height="48" BorderBrush="{x:Null}" Grid.Row="1">
+
+            <Button x:Name="button_startsave" Click="button_startsave_Click" Margin="407,135,22,65"  Background="#FF0056A7" BorderBrush="{x:Null}" Grid.Row="1">
                 <Grid Width="150" Height="30">
-                    <materialDesigin:PackIcon Kind="Update" Margin="-16,1,0,0" Foreground="Black" Height="25" Width="25"/>
+                    <materialDesigin:PackIcon Kind="Play" Margin="-16,1,0,0" Foreground="White" Height="25" Width="25"/>
                     <TextBlock x:Name="text_startbackup" Text="START THE BACKUP" FontFamily="Sitka Text" TextAlignment="Center"  VerticalAlignment="Center" HorizontalAlignment="Left" Width="160" FontSize="10" Foreground="White" Margin="2,0,0,0"/>
                 </Grid>
             </Button>
 
-            <Rectangle Grid.Row="1"  Margin="220,68,220,103" Fill="#FF0056A7" RadiusX="15" RadiusY="15"/>
-            <materialDesigin:PackIcon Kind="Message" Margin="220,81,0,0" Foreground="White" Height="51" Width="56" Visibility="Visible" Grid.Row="1"/>
-            <TextBlock x:Name="result" TextAlignment="Justify"  VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="281,82,0,0" FontFamily="Sitka Text" Width="237" Grid.Row="1" Height="50" Foreground="White"/>
+            <Rectangle  Margin="406,32,23,131" Fill="#FF0056A7" RadiusX="15" RadiusY="15" Grid.Row="1"/>
+            <materialDesigin:PackIcon Kind="Message" Margin="417,51,0,0" Foreground="White" Height="51" Width="56" Visibility="Visible" Grid.Row="1"/>
+            <TextBlock x:Name="result" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="472,63,0,0" FontFamily="Sitka Text" Width="248" Grid.Row="1" Height="25" Foreground="White"/>
 
+            <DataGrid Grid.Row="1" Margin="23,26,351,24" x:Name="Save_work" ItemsSource="{Binding NamesList}" IsReadOnly="True" AutoGenerateColumns = "False">
+                <DataGrid.Columns>
+                    <!-- Name save -->
+                    <DataGridTextColumn Binding="{Binding}">
+                        <DataGridTextColumn.Header>
+                            <TextBlock x:Name="Grid_Name" Text="NAME" />
+                        </DataGridTextColumn.Header>
+                    </DataGridTextColumn>
+
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="buttun_play" Content="Play" Background="#FF0056A7" Foreground="White" Width="50" Click="Button_Play_click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="buttun_pause" Content="Pause" Background="#FF0056A7" Foreground="White" Width="50" Click="Button_Pause_click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="buttun_stop" Content="Stop" Background="#FF0056A7" Foreground="White" Width="50" Click="Button_Stop_click"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+            </DataGrid>
         </Grid>
 
-        <Grid x:Name="GridMenu" Grid.ColumnSpan="2" Background="#FF00" MouseDown="GridMenu_MouseDown">
+        <Grid x:Name="GridMenu" Grid.ColumnSpan="2" Background="#FF0056A7" MouseDown="GridMenu_MouseDown">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="Buttonsmall" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="Button_minimize">
+                    <materialDesigin:PackIcon Kind="WindowMinimize"/>
+                </Button>
                 <Button x:Name="Buttonexit" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="Button_exit">
                     <materialDesigin:PackIcon Kind="Power"/>
                 </Button>
