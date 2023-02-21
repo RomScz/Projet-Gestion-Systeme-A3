@@ -151,67 +151,7 @@ namespace EasySaveApp.view
            
         }
 
-        private void source_directory_Click(object sender, RoutedEventArgs e)//Function to retrieve the path to the source folder
-        {
-            CommonOpenFileDialog dialog = new CommonOpenFileDialog(); //Declaration of the method to open the window to choose the folder path.
-            dialog.IsFolderPicker = true;
-
-            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
-            {
-                SoureDir.Text = dialog.FileName; //Displays the path in the window text.
-            }
-
-        }
-
-        private void target_directory_Click(object sender, RoutedEventArgs e)//Function to retrieve the path to the destination folder
-        {
-
-            CommonOpenFileDialog dialog = new CommonOpenFileDialog(); //Declaration of the method to open the window to choose the folder path.
-            dialog.IsFolderPicker = true;
-            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
-            {
-                TargetDir.Text = dialog.FileName; //Displays the path in the window text.
-            }
-
-        }
-
-        private void mirror_directory_Click(object sender, RoutedEventArgs e)//Function to retrieve the folder path of the mirror backup.
-        {
-            CommonOpenFileDialog dialog = new CommonOpenFileDialog(); //Declaration of the method to open the window to choose the folder path.
-            dialog.IsFolderPicker = true;
-            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
-            {
-                MirrorDir.Text = dialog.FileName; //Displays the path in the window text.
-            }
-
-        }
-
-        private void ShowListBox() //Function that displays the names of the backups in the list.
-        {
-
-            Save_work.Items.Clear();
-
-            List<string> names = viewmodel.ListBackup();
-            foreach(string name in names)//Loop that allows you to manage the names in the list.
-            {
-                Save_work.Items.Add(name); //Function that allows you to insert the names of the backups in the list.
-            }
-        }
-
-        private void mirror_button_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_exit(object sender, RoutedEventArgs e)//Function of the button to close the software
-        {
-            Application.Current.Shutdown();//Function that turns off the software
-        }
-
-        private void GridMenu_MouseDown(object sender, RoutedEventArgs e)//Function that allows you to move the software window.
-        {
-            DragMove();//Function that allows movement
-        }
+      
 
         private void button_startsave_Click(object sender, RoutedEventArgs e)//Function that launches the backup
         {
