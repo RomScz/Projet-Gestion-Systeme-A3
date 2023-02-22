@@ -33,3 +33,10 @@ C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\De
 C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp_MarkupCompile.lref
 C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.dll
 C:\Users\hp\Source\Repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.pdb
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.csproj.AssemblyReference.cache
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\view\MainWindow.g.cs
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp_MarkupCompile.cache
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp_MarkupCompile.lref
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.dll
+C:\Users\Sconza\source\repos\Projet-Gestion-Systeme-A3\Livrable 3\EasySaveApp\obj\Debug\netcoreapp3.1\EasySaveApp.pdb
