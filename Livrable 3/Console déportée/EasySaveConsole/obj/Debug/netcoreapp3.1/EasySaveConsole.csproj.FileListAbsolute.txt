@@ -41,3 +41,25 @@ C:\Users\Sconza\Downloads\EasySave-main\EasySave-main\Version3.0\EasySaveConsole
 C:\Users\Sconza\Downloads\EasySave-main\EasySave-main\Version3.0\EasySaveConsole\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.dll
 C:\Users\Sconza\Downloads\EasySave-main\EasySave-main\Version3.0\EasySaveConsole\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.pdb
 C:\Users\Sconza\Downloads\EasySave-main\EasySave-main\Version3.0\EasySaveConsole\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.genruntimeconfig.cache
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\bin\Debug\netcoreapp3.1\EasySaveConsole.exe
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\bin\Debug\netcoreapp3.1\EasySaveConsole.deps.json
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\bin\Debug\netcoreapp3.1\EasySaveConsole.runtimeconfig.json
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\bin\Debug\netcoreapp3.1\EasySaveConsole.runtimeconfig.dev.json
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\bin\Debug\netcoreapp3.1\EasySaveConsole.dll
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\bin\Debug\netcoreapp3.1\EasySaveConsole.pdb
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.csproj.AssemblyReference.cache
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole_MarkupCompile.cache
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.g.resources
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.AssemblyInfoInputs.cache
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.AssemblyInfo.cs
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.csproj.CoreCompileInputs.cache
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.csproj.CopyComplete
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.dll
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.pdb
+C:\Users\Sconza\OneDrive - Association Cesi Viacesi mail\Documents\CESI\A3 FISA\Semestre 1\Programmation système\Livrables\Console déportée\EasySaveConsole\obj\Debug\netcoreapp3.1\EasySaveConsole.genruntimeconfig.cache
