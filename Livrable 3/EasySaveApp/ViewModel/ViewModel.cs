@@ -119,7 +119,12 @@ namespace EasySaveApp.viewmodel
 
         public void DontSave() //Function that prevent EasySave from saving while a third party app is running
         {
+
             List<string> BL = new List<string>();
+            List<string> blacklisted_app = new List<string>
+            {
+                "winword"
+            };
 
             foreach (string bl in blacklisted_app)
             {
@@ -129,7 +134,7 @@ namespace EasySaveApp.viewmodel
 
                 if (i.Length > 0 == true)
                 {
-                    foreach(Process proc in i)
+                    foreach (Process proc in i)
                     {
                         proc.WaitForExit();
 
@@ -138,9 +143,10 @@ namespace EasySaveApp.viewmodel
                             proc.CloseMainWindow();
                             proc.Close();
                         }
-                    }               
+                    }
                 }
-            }         
+            }
+
         }
 
         public void StartServer()//Function to start the server
