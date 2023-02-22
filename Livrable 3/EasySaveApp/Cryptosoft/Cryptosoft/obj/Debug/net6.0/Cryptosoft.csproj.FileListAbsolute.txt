@@ -1,0 +1,15 @@
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\obj\Debug\net6.0\Cryptosoft.csproj.AssemblyReference.cache
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\obj\Debug\net6.0\Cryptosoft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\obj\Debug\net6.0\Cryptosoft.AssemblyInfoInputs.cache
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\obj\Debug\net6.0\Cryptosoft.AssemblyInfo.cs
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\obj\Debug\net6.0\Cryptosoft.csproj.CoreCompileInputs.cache
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\bin\Debug\net6.0\Cryptosoft.exe
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\bin\Debug\net6.0\Cryptosoft.deps.json
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\bin\Debug\net6.0\Cryptosoft.runtimeconfig.json
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\bin\Debug\net6.0\Cryptosoft.dll
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\bin\Debug\net6.0\Cryptosoft.pdb
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\obj\Debug\net6.0\Cryptosoft.dll
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\obj\Debug\net6.0\refint\Cryptosoft.dll
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\obj\Debug\net6.0\Cryptosoft.pdb
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\obj\Debug\net6.0\Cryptosoft.genruntimeconfig.cache
+C:\Users\amtch\source\repos\Cryptosoft\Cryptosoft\obj\Debug\net6.0\ref\Cryptosoft.dll
