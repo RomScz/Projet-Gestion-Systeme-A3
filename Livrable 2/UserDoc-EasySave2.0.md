@@ -15,7 +15,7 @@
 <p>To fill this file there is a syntax to respect.
 <p>It is necessary to separate the software to be banned by a ","
 <pre><code>[ 
-    { "blacklisted_items": "calculator,notepad" } 
+    { "blacklisted_items": "calculator" } 
 ]</code></pre>
 
 ###File of extensions to be encrypted
