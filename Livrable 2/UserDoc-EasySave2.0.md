@@ -2,7 +2,7 @@
 
 ###THE USER INTERFACE
 
-<img src="https://media.discordapp.net/attachments/626452497871011862/784897917877223484/Doc_User_-_EasySave2.0.png?width=1143&height=591" alt="">
+<img src="https://cdn.discordapp.com/attachments/1067811500732993596/1078316617966026842/ManuelUtilisation.png" alt="">
 
 ###Log file
 * The log file is saved here: `\EasySaveApp\Logs\`
